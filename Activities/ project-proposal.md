@@ -165,7 +165,7 @@ If ILPI does not accept them, the receipt feature is reduced to a personal recor
 | Member | Ideas or analysis contributed | Drafting or review contribution |
 | :---- | :---- | :---- |
 | Michael Andre L. Novela | 2 problems, proposed a solution to the selected problem and identified 4 relevant stakeholders | Drafted Preliminary Project Proposal and Stakeholder list, also proofread others’ work if they support the other sections |
-| Sam B. Tomenio | 2 problems then Brainstorming which one we chose and suggesting that we merge compatible ideas | Drafted Initial Scope basically the entirety of section 5 | Proofreading |
+| Sam B. Tomenio | 2 problems then Brainstorming which one we chose and suggesting that we merge compatible ideas | Drafted Initial Scope basically the entirety of section 5 and Proofreading |
 | Jericho Zhadraq S. Villadolid | 2 problems, analysis on the feasibility of each problem idea | Reviewed the preliminary proposal and scope for changes to be made in Section 6 |
 | Winchester T. dela Vega | 2 problems | Assisted in every draft, answering questions they are confused about,,, basically a support role, not mainly my idea but giving a helping hand… “Fault-finder” |
 
@@ -186,7 +186,7 @@ Select one option:
 | Member who used AI | Tool | Purpose and sections assisted | How output was checked or revised |
 | :---- | :---- | :---- | :---- |
 | Michael Andre L. Novela | Gemini | I mostly used Gemini to polish my ideas and statements. I also used it to improve my grammar and the structuring of my answers. I used gemini to work on Section 2, 3 and section 4\. | By Proofreading, I made sure that every insight that the AI generated supported my idea. |
-| Sam B. Tomenio | ChatGPT | Gemini  | Grammar check, consolidated ideas from ramblings and translation to make it sound better and polish them at Section 5 Review and Next Steps | Manually checked and read through if generated result matches the idea given |
+| Sam B. Tomenio | ChatGPT and Gemini  | Grammar check, consolidated ideas from ramblings and translation to make it sound better and polish them at Section 5 Review and Next Steps | Manually checked and read through if generated result matches the idea given |
 | Jericho Zhadraq S. Villadolid | Claude | Condensing and trimming of long paragraphs of rambles for problem brainstorming and comparison | Reading through the response, determining if the core ideas and key points were preserved. |
 | Winchester Dela Vega | ChatGPT | Used ChatGPT to elaborate my idea,, translate it and check grammars, | Went reading word by word if it was giving me output that is the same as the idea i had given,, also checked if it was translated. |
 
