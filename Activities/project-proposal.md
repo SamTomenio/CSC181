@@ -208,8 +208,8 @@ Team confirmation: All members should review this revised manuscript before subm
 * [x] The scope contains 3–5 capabilities and at least three exclusions.  
 * [x] Constraints, assumptions, and success indicators are included.  
 * [x] A review change and three unanswered questions are documented.  
-* [ ] Contributions, references, and AI use are declared (complete the second-manuscript details).  
-* [ ] All members reviewed the same final revised document.  
-* [ ] Each member saved the file as `activities/project-proposal.md`.  
-* [ ] Each member committed and pushed their copy to their personal repository.  
-* [ ] Each member submitted their own GitHub file link through MOLE.
+* [x] Contributions, references, and AI use are declared (complete the second-manuscript details).  
+* [x] All members reviewed the same final revised document.  
+* [x] Each member saved the file as `activities/project-proposal.md`.  
+* [x] Each member committed and pushed their copy to their personal repository.  
+* [x] Each member submitted their own GitHub file link through MOLE.
