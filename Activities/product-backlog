@@ -364,7 +364,7 @@ Write at least 3, using at least two EARS patterns. Record who agreed to any num
 
 Show system boundary, actors, and main use cases. See Week 4, slide 23\.
 
-\!\[ERD\](use-case.png)
+![ERD](use-case.png)
 
 UC-01: **Plan Appliance Usage, Project Costs, and Calculate Allowable Operating Hours**  
 Choose workflow with most steps or error paths. See Week 4, slide 24\.
