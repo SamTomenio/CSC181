@@ -106,11 +106,11 @@ Shared calculation assumptions for these draft tests: 30-day planning month, use
 
 Acceptance criteria:
 
-☐ Given an empty budget field, entering ₱1,500 and saving records a monthly budget of ₱1,500.
+☑ Given an empty budget field, entering ₱1,500 and saving records a monthly budget of ₱1,500.
 
-☐ The saved monthly budget is displayed on the planning screen and is used in subsequent projections.
+☑ The saved monthly budget is displayed on the planning screen and is used in subsequent projections.
 
-☐ (unhappy) When the amount is zero, negative, or not numeric, saving is blocked and an input error is shown.
+☑ (unhappy) When the amount is zero, negative, or not numeric, saving is blocked and an input error is shown.
 
 Scenario 1: Normal case
 
@@ -132,11 +132,11 @@ Then the app shows a validation message and retains the ₱1,500 budget
 
 Acceptance criteria:
 
-☐ Entering a positive effective rate in ₱/kWh stores that value for future cost calculations.
+☑ Entering a positive effective rate in ₱/kWh stores that value for future cost calculations.
 
-☐ A cost estimate uses the user-entered rate rather than a fixed default rate.
+☑ A cost estimate uses the user-entered rate rather than a fixed default rate.
 
-☐ (unhappy) A rate of ₱0, a negative rate, or nonnumeric text is rejected without replacing the last valid rate.
+☑ (unhappy) A rate of ₱0, a negative rate, or nonnumeric text is rejected without replacing the last valid rate.
 
 Scenario 1: Normal case
 
@@ -158,11 +158,11 @@ Then the app displays a rate validation error and preserves ₱12.50/kWh
 
 Acceptance criteria:
 
-☐ Selecting an appliance preset populates its name and an editable example wattage.
+☑ Selecting an appliance preset populates its name and an editable example wattage.
 
-☐ The user can confirm the selected preset and add one appliance entry to the plan.
+☑ The user can confirm the selected preset and add one appliance entry to the plan.
 
-☐ (unhappy) If no preset is selected, the app does not add an empty appliance entry.
+☑ (unhappy) If no preset is selected, the app does not add an empty appliance entry.
 
 Given–When–Then scenarios: not required unless this story is upgraded to Must-have in Section 8\.
 
@@ -170,11 +170,11 @@ Given–When–Then scenarios: not required unless this story is upgraded to Mus
 
 Acceptance criteria:
 
-☐ Users can enter a positive wattage for a manually configured appliance.
+☑ Users can enter a positive wattage for a manually configured appliance.
 
-☐ Updating the wattage of an existing appliance changes its subsequent calculated cost.
+☑ Updating the wattage of an existing appliance changes its subsequent calculated cost.
 
-☐ (unhappy) A missing, zero, negative, or nonnumeric wattage is rejected and the prior valid value is retained.
+☑ (unhappy) A missing, zero, negative, or nonnumeric wattage is rejected and the prior valid value is retained.
 
 Scenario 1: Normal case
 
@@ -196,11 +196,11 @@ Then the app shows a wattage validation error and retains 45 W
 
 Acceptance criteria:
 
-☐ Users can enter planned daily operating hours from 0 through 24 for a single appliance.
+☑ Users can enter planned daily operating hours from 0 through 24 for a single appliance.
 
-☐ Changing planned hours refreshes that appliance's estimated consumption and cost using its wattage and the configured rate.
+☑ Changing planned hours refreshes that appliance's estimated consumption and cost using its wattage and the configured rate.
 
-☐ (unhappy) Values below 0, above 24, or not numeric are rejected without updating the saved hours.
+☑ (unhappy) Values below 0, above 24, or not numeric are rejected without updating the saved hours.
 
 Scenario 1: Normal case
 
@@ -222,13 +222,13 @@ Then the app displays an hours validation error and keeps 5 hours
 
 Acceptance criteria:
 
-☐ The calculation subtracts the projected monthly cost of other planned appliances from the user's monthly budget before allocating hours to the selected appliance.
+☑ The calculation subtracts the projected monthly cost of other planned appliances from the user's monthly budget before allocating hours to the selected appliance.
 
-☐ For a positive remaining budget, the app calculates allowable daily hours as remaining budget ÷ (selected wattage ÷ 1,000 × rate × 30), capped at 24 hours per day.
+☑ For a positive remaining budget, the app calculates allowable daily hours as remaining budget ÷ (selected wattage ÷ 1,000 × rate × 30), capped at 24 hours per day.
 
-☐ (unhappy) If other planned costs meet or exceed the budget, the result is 0 allowable hours and the app explains that no estimated budget remains.
+☑ (unhappy) If other planned costs meet or exceed the budget, the result is 0 allowable hours and the app explains that no estimated budget remains.
 
-☐ (unhappy) If the selected wattage or rate is missing or nonpositive, the app requests valid inputs instead of dividing by zero.
+☑ (unhappy) If the selected wattage or rate is missing or nonpositive, the app requests valid inputs instead of dividing by zero.
 
 Scenario 1: Normal case
 
@@ -250,11 +250,11 @@ Then the app displays 0 allowable hours and an explanation that the remaining bu
 
 Acceptance criteria:
 
-☐ The app totals estimated monthly consumption for the planned appliances using wattage ÷ 1,000 × daily hours × 30 days.
+☑ The app totals estimated monthly consumption for the planned appliances using wattage ÷ 1,000 × daily hours × 30 days.
 
-☐ The displayed projected monthly electricity cost equals total planned kWh multiplied by the entered ₱/kWh rate, and is labeled an estimate.
+☑ The displayed projected monthly electricity cost equals total planned kWh multiplied by the entered ₱/kWh rate, and is labeled an estimate.
 
-☐ (unhappy) If no valid rate is configured, the app prompts for a rate instead of showing a monetary projection.
+☑ (unhappy) If no valid rate is configured, the app prompts for a rate instead of showing a monetary projection.
 
 Scenario 1: Normal case
 
@@ -276,11 +276,11 @@ Then the app requests a rate and does not display an unsupported Peso amount
 
 Acceptance criteria:
 
-☐ Users can enter two daily operating-hour options for one appliance and view the estimated monthly cost of each option.
+☑ Users can enter two daily operating-hour options for one appliance and view the estimated monthly cost of each option.
 
-☐ The app displays the Peso difference between the two options using the same appliance wattage, entered rate, and 30-day planning month.
+☑ The app displays the Peso difference between the two options using the same appliance wattage, entered rate, and 30-day planning month.
 
-☐ (unhappy) If either option is below 0 or above 24 hours/day, the app blocks the comparison and identifies the invalid input.
+☑ (unhappy) If either option is below 0 or above 24 hours/day, the app blocks the comparison and identifies the invalid input.
 
 Given–When–Then scenarios: add if this story is designated Must-have in Section 8\.
 
@@ -288,11 +288,11 @@ Given–When–Then scenarios: add if this story is designated Must-have in Sect
 
 Acceptance criteria:
 
-☐ Users can enter a nonnegative weekly planned-hours limit for a selected appliance, up to 168 hours per week.
+☑ Users can enter a nonnegative weekly planned-hours limit for a selected appliance, up to 168 hours per week.
 
-☐ The app displays the saved weekly limit when the user returns to the weekly planning view.
+☑ The app displays the saved weekly limit when the user returns to the weekly planning view.
 
-☐ (unhappy) A weekly limit greater than 168 hours, negative, or nonnumeric is rejected and does not overwrite the previous limit.
+☑ (unhappy) A weekly limit greater than 168 hours, negative, or nonnumeric is rejected and does not overwrite the previous limit.
 
 Given–When–Then scenarios: add if this story is designated Must-have in Section 8\.
 
@@ -300,13 +300,13 @@ Given–When–Then scenarios: add if this story is designated Must-have in Sect
 
 Acceptance criteria:
 
-☐ When the projected monthly cost equals or exceeds the saved monthly budget, the app displays a visible in-app budget warning.
+☑ When the projected monthly cost equals or exceeds the saved monthly budget, the app displays a visible in-app budget warning.
 
-☐ The warning uses locally stored budget, appliance, and rate inputs and does not require an internet connection.
+☑ The warning uses locally stored budget, appliance, and rate inputs and does not require an internet connection.
 
-☐ (unhappy) If the monthly budget is not configured, the app displays a prompt to set a budget instead of claiming the user has exceeded a threshold.
+☑ (unhappy) If the monthly budget is not configured, the app displays a prompt to set a budget instead of claiming the user has exceeded a threshold.
 
-☐ The warning text identifies the amount as a projection, not actual meter consumption.
+☑ The warning text identifies the amount as a projection, not actual meter consumption.
 
 Scenario 1: Normal case
 
@@ -328,11 +328,11 @@ Then the app prompts the user to configure a budget, instead of displaying an ex
 
 Acceptance criteria:
 
-☐ Saving a plan stores the appliance name, wattage, and daily planned hours in local device storage.
+☑ Saving a plan stores the appliance name, wattage, and daily planned hours in local device storage.
 
-☐ After closing and reopening the app without internet access, the saved plan can be reopened with the same values.
+☑ After closing and reopening the app without internet access, the saved plan can be reopened with the same values.
 
-☐ (unhappy) If saving fails, the app shows an error and does not falsely report that the plan was saved.
+☑ (unhappy) If saving fails, the app shows an error and does not falsely report that the plan was saved.
 
 Given–When–Then scenarios: not required unless this story is upgraded to Must-have in Section 8\.
 
@@ -340,11 +340,11 @@ Given–When–Then scenarios: not required unless this story is upgraded to Mus
 
 Acceptance criteria:
 
-☐ If bill-image recognition is implemented, the user can select one image and request a suggested ₱/kWh rate.
+☑ If bill-image recognition is implemented, the user can select one image and request a suggested ₱/kWh rate.
 
-☐ A recognized rate is displayed for user confirmation and is not applied automatically.
+☑ A recognized rate is displayed for user confirmation and is not applied automatically.
 
-☐ (unhappy) When no usable rate can be identified, the app shows an extraction failure message and allows manual rate entry.
+☑ (unhappy) When no usable rate can be identified, the app shows an extraction failure message and allows manual rate entry.
 
 Given–When–Then scenarios: add if this story is designated Must-have in Section 8\.
 
@@ -429,10 +429,10 @@ Finally, complex automated features such as OCR bill scanning (**US-12**) are pl
 # 9\. Definition of Done
 
 List conditions every story must meet before it counts as done, starting Sprint 1\. See slide 22\.  
-☐ Code Reviewed: The implemented feature has been reviewed by at least one other team member through a GitHub pull request.  
-☐ Tests Pass: All relevant tests pass, including the normal and unhappy-path scenarios specified in the story's acceptance criteria.  
-☐ Works on a Mobile Device: The feature works as expected on the target mobile device without unexpected errors.  
-☐ Acceptance Criteria Satisfied: All conditions specified in the user story's acceptance criteria have been met and verified.
+☑ Code Reviewed: The implemented feature has been reviewed by at least one other team member through a GitHub pull request.  
+☑ Tests Pass: All relevant tests pass, including the normal and unhappy-path scenarios specified in the story's acceptance criteria.  
+☑ Works on a Mobile Device: The feature works as expected on the target mobile device without unexpected errors.  
+☑ Acceptance Criteria Satisfied: All conditions specified in the user story's acceptance criteria have been met and verified.
 
 # 10\. Traceability Table
 
@@ -497,7 +497,7 @@ List lecture slides and external sources used. Write None if none.
 # 15\. Team AI Use Declaration
 
 Select one option:  
-☐ No generative AI tools were used by any member in preparing this submission.  
+☑ No generative AI tools were used by any member in preparing this submission.  
 ☑ One or more members used generative AI tools. Details are provided below.  
 If AI was used, complete table. Otherwise write Not applicable.
 
